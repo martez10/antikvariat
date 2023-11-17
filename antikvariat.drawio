@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-17T13:34:54.811Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="yWvLO1YkyPfP1wfIw02H" version="22.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-17T13:40:03.192Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="zf-VpsNPqioqYR8f9jkg" version="22.1.2" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="1591" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -155,7 +155,7 @@
         <mxCell id="APGSo0OI6IQUyZFuy4CO-53" value="Objednavka" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="760" y="304" width="160" height="242" as="geometry" />
         </mxCell>
-        <mxCell id="APGSo0OI6IQUyZFuy4CO-57" value="PK identifikator: int&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="APGSo0OI6IQUyZFuy4CO-53">
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-57" value="PK idObjednavka: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="APGSo0OI6IQUyZFuy4CO-53">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="APGSo0OI6IQUyZFuy4CO-61" value="datumVytvoreni: date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="APGSo0OI6IQUyZFuy4CO-53">
@@ -216,7 +216,7 @@
           <mxGeometry x="710" y="397" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="APGSo0OI6IQUyZFuy4CO-80" value="Vydej" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="724" y="914" width="240" height="104" as="geometry" />
+          <mxGeometry x="724" y="914" width="240" height="156" as="geometry" />
         </mxCell>
         <mxCell id="APGSo0OI6IQUyZFuy4CO-81" value="PK idVydej: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="APGSo0OI6IQUyZFuy4CO-80">
           <mxGeometry y="26" width="240" height="26" as="geometry" />
@@ -224,8 +224,14 @@
         <mxCell id="APGSo0OI6IQUyZFuy4CO-119" value="FK zamestnanec:&amp;nbsp;idCisloZamestnanec&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="APGSo0OI6IQUyZFuy4CO-80">
           <mxGeometry y="52" width="240" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="APGSo0OI6IQUyZFuy4CO-82" value="datumVydani: date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="APGSo0OI6IQUyZFuy4CO-80">
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-121" value="FK idSkladu: idSkladu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="APGSo0OI6IQUyZFuy4CO-80">
           <mxGeometry y="78" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-123" value="FK idObjednavka: idObjednavka" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="APGSo0OI6IQUyZFuy4CO-80">
+          <mxGeometry y="104" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-82" value="datumVydani: date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="APGSo0OI6IQUyZFuy4CO-80">
+          <mxGeometry y="130" width="240" height="26" as="geometry" />
         </mxCell>
         <mxCell id="APGSo0OI6IQUyZFuy4CO-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
@@ -285,6 +291,29 @@
               <mxPoint x="720" y="979" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="APGSo0OI6IQUyZFuy4CO-45" target="APGSo0OI6IQUyZFuy4CO-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="APGSo0OI6IQUyZFuy4CO-57" target="APGSo0OI6IQUyZFuy4CO-123">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="343" />
+              <mxPoint x="1010" y="1031" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-125" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="910" y="321" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-126" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1005" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-127" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="904" y="50" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="APGSo0OI6IQUyZFuy4CO-129" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="964" y="975" width="20" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
