@@ -1,0 +1,34 @@
+DROP DATABASE IF EXISTS db;
+CREATE DATABASE db;
+
+CREATE TABLE Grades (
+    g_id int auto_increment NOT NULL,
+    g_Name VARCHAR(255),
+    g_Course VARCHAR(255),
+    g_Date DATE,
+    g_Result INT,
+    PRIMARY KEY (g_id)
+);
+
+
+INSERT INTO Grades(g_Name, g_Course, g_Date, g_Result)
+VALUES
+    ('Novák', 'EIEC8E', '22-01-15', 2),
+    ('Kala', 'EIEC8E', '22-01-30', 2),
+    ('Brož', 'EIED4E', '22-01-15', 3),
+    ('Vrana', 'EIEC8E', '22-02-05', 4),
+    ('Švarc', 'EIED4E', '22-02-05', 1);
+
+SELECT g_Name AS Name, g_Course AS Course, DATE_FORMAT(g_Date, '%y/%m/%d') AS Date, g_Result AS Result FROM Grades;
+
+SELECT COUNT(*) AS Pocet_Zaznamu FROM Grades;
+
+SELECT AVG(g_Result) AS Prumerna_Znamka FROM Grades;
+
+SELECT SUM(g_Result) as Suma_Znamek from Grades;
+
+SELECT g_Course AS G_COURSE FROM Grades GROUP BY g_Course;
+
+SELECT g_Course AS G_COURSE, AVG(g_Result) AS AVERAGE_RESULT FROM Grades GROUP BY g_Course;
+
+
